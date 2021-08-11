@@ -1,0 +1,72 @@
+/*basic으로 깔리는 style*/
+
+/*----버튼기본타입-----*/
+/*submit*/
+button{
+    background-color:#c9c9c9;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    border:1px solid  #dddddd;
+    display:inline-block;
+    cursor:pointer;
+    color:#5f5f5f;
+    font-family:Arial;
+    font-size:13px;
+    letter-spacing: 5px; /*단어간격*/
+    padding:12px 30px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #6b706a;
+}
+button:active{   
+    position: relative;
+    top: 1px;
+}
+button::after{
+    /*각자 css에서 정해야할것
+    bakcground-color,color*/
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    border:1px solid #dddddd;
+    display:inline-block;
+    cursor:pointer;
+    color:#c9c9c9;
+    font-family:Arial;
+    font-size:13px;
+    letter-spacing: 5px; /*단어간격*/
+    padding:12px 30px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #6b706a;/*글자 그림자*/
+}
+
+
+/*----input기본타입-----*/
+
+input[type="text"], 
+input[type="password"]{
+    height: auto;
+    /*높이초기화*/line-height: normal;
+    /*line-height초기화*/
+    background-color: #F8F8F8;
+    border: 0.5px solid #D8D8D8;
+    /*box배경설정*/
+    border-radius: 3px;
+    /*둥근모서리설정*/font-size: 12pt;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+  ::-webkit-input-placeholder { /* Edge */
+    color: #C5C5C5;
+    font-size: 13px;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer */
+    color: #C5C5C5;
+    font-size: 13px;
+  }
+
+  ::placeholder { color: #C5C5C5; font-size: 13px; }
+

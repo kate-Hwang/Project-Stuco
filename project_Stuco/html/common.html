@@ -1,0 +1,152 @@
+<!--채팅 및 타임라인(게시판) 페이지-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/component/common.css">
+    <link rel="stylesheet" href="../css/base/base.css">
+    <link rel="stylesheet" href="../css/lib/modal_style.css">
+    <link rel="stylesheet" href="../css/module/basic.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="../js/custom/modal.js"></script>
+    <title>Stuko</title>
+</head>
+<body>
+    <!--글쓰기 popup-page-->
+    <!--<div id="write-popup-wrapper">
+        <header>
+            <div class="topbar">
+                <p>질문 작성하기</p>
+            </div>    
+            <p class="txt">궁금한건 물어보세요!</p>
+        </header>
+        <div class="anonym">
+            작성자<input type="text" name="" value="">
+        </div>
+        <span></span>
+
+        위지윅사용가능성을 위해서 간단하게 작업진행-->
+        <!-- <div class="textarea-box">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div> -->
+        <!--비밀번호입력란-->
+        <!-- <div class="txt-password">
+            <span>비밀번호</span> 
+            <input type="password" name="" value="">
+        </div>
+        <div class="submit">
+            <button type="submit">게시판 등록</button>
+        </div>
+    </div> -->
+    <!----------------------------------------------->
+    <div id="wrap">
+        <header class="header-nav">
+            <div class="nav-cover">
+                <div class="logo"><a href="#">logo</a></div>    <!--로고-->
+                <div class="notice-write"><a href="#">글쓰기</a></div>
+                <div class="word-page"><a href="#">용어정리페이지</a></div>
+            </div>
+        </header>
+
+        <section class="contents">
+            <div class="post-box">
+                    <!--베스트 게시글-->
+                <div class="best-notice">
+                    <div class="best-box"></div>
+                </div>
+                <div class="notice">
+                    <!--게시글검색-->
+                    <div class="search">
+                        <input type="text"  placeholder="게시글검색" />
+                    </div>
+                    <!--타임라인게시물-->
+                    <div class="time-line">
+                            <div class="line-notice">
+                                <ul class="cbp-tmtime">
+                                    <li class="big-box">
+                                        <div class="chap-icon"></div>
+                                        <div class="timeline-in">
+                                            <h3>Ricebean black-eyed pea</h3>
+                                            <p>Winter purslane courgette pumpkin quandong komatsuna fennel green bean 
+                                                cucumber watercress. Pea sprouts wattle seed rutabaga okra yarrow cress 
+                                                avocado grape radish bush tomato ricebean black-eyed pea maize eggplant.
+                                            </p>
+                                        </div>
+                                        <div class="cbp-time" datetime="2019-06-10 18:30"><span>10/06/19</span> <span>18:30</span></div>
+                                    </li>
+                        
+                                    <li class="big-box">
+                                        <div class="chap-icon"></div>
+                                        <div class="timeline-in">
+                                            <h3>Ricebean black-eyed pea</h3>
+                                            <p>Winter purslane courgette pumpkin quandong komatsuna fennel green bean cucumber watercress. Pea sprouts wattle seed rutabaga okra yarrow cress avocado grape radish bush tomato ricebean black-eyed pea maize eggplant.
+                                            </p>
+                                        </div>
+                                        <div class="cbp-time" datetime="2019-10-10 18:30"><span>4/10/19</span> <span>18:30</span></div>
+                                    </li>
+                        
+                                    <li class="big-box">
+                                        <div class="chap-icon"></div>
+                                        <div class="timeline-in">
+                                            <h3>Ricebean black-eyed pea</h3>
+                                            <p>Winter purslane courgette pumpkin quandong komatsuna fennel green bean cucumber watercress. Pea sprouts wattle seed rutabaga okra yarrow cress avocado grape radish bush tomato ricebean black-eyed pea maize eggplant.
+                                            </p>
+                                        </div>
+                                        <div class="cbp-time" datetime="2019-09-30 18:30"><span>4/10/19</span> <span>18:30</span></div>
+                                    </li>
+
+                                    <li class="big-box">
+                                        <div class="chap-icon"></div>
+                                        <div class="timeline-in">
+                                            <h3>Ricebean black-eyed pea</h3>
+                                            <p>Winter purslane courgette pumpkin quandong komatsuna fennel green bean cucumber watercress. Pea sprouts wattle seed rutabaga okra yarrow cress avocado grape radish bush tomato ricebean black-eyed pea maize eggplant.
+                                            </p>
+                                        </div>
+                                        <div class="cbp-time" datetime="2019-10-10 18:30"><span>4/10/19</span> <span>18:30</span></div>
+                                    </li>
+                            </ul>
+                        </div> <!-- line-notice -->
+                    </div> <!-- time-line -->
+                </div> <!-- notice -->
+            </div> <!-- post-box -->
+            
+
+                <!--채팅페이지-->
+                <div class="chat-background">
+                    <div class="chat-list-wrap">
+                        <div class="header">
+                            <p>●</p>
+                            <p>채팅방</p>
+                            <p>입장 인원 수</p>
+                            <p>28</p><!--/Data/-->
+                        </div>
+                        <div class="chat-list">
+                            <ul>
+                                <li>
+                                    <div class="profile"><img src="" alt=""><p class="random-name">인도호랑이</p></div>
+                                    <div class="chat-content"><p>질문있습니다!</p></div>
+                                </li><!--채팅내용 1)-->
+
+                                <li class="mytext">
+                                    <div class="profile"><img src="" alt=""><p class="random-name">토종미꾸라지</p></div>
+                                    <div class="chat-content"><p>선생님 목소리가 잘안들려요</p></div>
+                                </li><!--채팅내용 2)-->
+                            </ul>
+                        </div><!-- /chat-list/-->
+                    </div> <!-- chat-list-wrap -->
+
+                        <div class="chat-input-txt">
+                            <textarea name="text" id="send" cols="100" rows="10"></textarea>
+                            <div class="btn-box">
+                                <p><button type="button" class="change-nic">닉네임바꾸기</button></p>
+                                <p><button type="submit" class="send-message">전송</button></p>
+                            </div>
+                        </div>
+                </div><!-- chat-background -->
+        </section> <!--전체콘텐츠-->
+        
+    </div> <!--end wrap-->
+</body>
+</html>

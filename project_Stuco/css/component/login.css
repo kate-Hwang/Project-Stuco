@@ -1,0 +1,281 @@
+@charset "utf-8";
+/*-----최초 계정 만들기-----*/
+.join-window-close {
+    font-size: 13px;
+    color: #000; 
+    left: 47.7%;
+    top: 48%;
+}
+#Wrapper{
+    display: block;
+    padding-top: 5%;
+}
+.popup-box1{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+}
+.content-cover{
+    width: 400px;
+    height: 630px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 7px #000;
+    background-color: #fff;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+.header-box{
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+}
+.logo2{ display: block; margin:0; }
+.logo2 > img { padding: 0 30px;}
+.header-write{
+    display: inline-block;
+    min-width: 100%;
+    font-size: 25px;
+    text-align: center;
+    margin: 18px 0;
+    color: #000;
+}
+/*----관리자 계정만들기 창----*/
+.user-write-box{ margin-bottom: 5%; }
+
+/*---------------------------*/
+.first-session-box{ max-width: 100%; }
+.form-box2{
+    max-width: 100%;
+    font-size: 13px;
+}
+.user-join-id input[type="text"], 
+.user-join-pw input[type="password"], 
+.user-join-pw1 input[type="password"]{
+    display: block;
+    min-width: 70%;
+    margin: 15px auto;
+    font-size: 13px;
+    padding: 12px 50px 12px 10px;
+}
+input[type="text"], 
+input[type="password"]:focus { outline:0; }
+.user-join-id label, 
+.user-join-pw label, 
+.user-join-pw1 label{
+    min-width: 85%; 
+    color: #000;
+    margin-left: 7%;
+    font-size: 13px;
+    font-weight: 700;
+}
+/*작성규정에 어긋날 경우에 생기는 경고 Ajax*/
+.wrong-join{
+    max-width: 85%;
+    margin: 18px auto;
+    text-align: right;
+    color: red;
+}
+
+/*-----계정생성버튼-----*/
+.submit-btn2{
+    max-width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    border-top: 0.8px solid #eeee;
+    border-bottom: 0.8px solid #eeee;
+}
+#click-start{
+    min-width: 85%;
+    height: 48px;
+    margin: 10px 0;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 800;
+    background-color: #8e7ac6;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.return-login { text-align: center; padding: 15px 0;}
+.return-login a{text-decoration: none; color: #595959; font-size: 13px;}
+/*-------------------------------------------------------------------*/
+/*------------------------/관리자로그인/--------------------------------*/ 
+#wrap{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, #8e7ac6, #72bdfc);
+}
+#wrap .All-boxing{
+    padding-top: 4%;
+}
+#wrap .All-boxing .box-catching {
+    width: 360px;
+    height: 598px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 20px #8e7ac6;
+    background-color: #fff;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+.logo-box{
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+}
+.logo{
+    display: inline-block;
+    margin:0;
+}
+.login-name{
+    display: block;
+    font-size: 25px;
+    font-weight: 900;
+}
+.logo > img{ padding: 0 30px; }
+/*--------------*/
+.logged-in-box{ width: 100%; }
+.login-text-box{
+    max-width: 100%;
+    text-align: center;
+}
+
+.user-pw{margin-top: 15px;} /*input 간격조정*/
+/* 계정-box*/
+.user-id input[type="text"] { 
+    padding: 12px 50px 12px 10px; /* 여백 설정 */ 
+    font-size: 15pt;
+}
+.user-pw input[type="password"]{
+    padding: 12px 50px 12px 10px; /* 여백 설정 */ 
+    font-size: 15pt;
+}
+/*box-포커스아웃라인제거*/ 
+input[type="text"], 
+input[type="password"]:focus { outline:0; }
+.wrong-login{
+    display: none;
+    text-align: right;
+    padding-right: 40px;
+    color: red;   
+}
+/*로그인 확인 버튼*/
+.submit-btn1{ max-width: 100%; }
+#btn-login{
+    min-width: 88%;
+    height: 48px;
+    margin: 10px 0;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 800;
+    background-color: #8e7ac6;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+/*--------------비밀번호 재생성(잃어버렸을때)----------------*/
+.reset-passwd{
+    max-width: 94%;
+    text-align: right;
+}
+.reset-passwd > a{
+    color: black;
+    font-size: 13px;
+    text-decoration-line: none;
+    -moz-text-decoration-line: none;
+}
+.reset-passwd > p > a:hover{
+    color: #ffffff;
+    font-size: 13px;
+}
+.join-manager-inner{
+    max-width: 100%;
+    margin-top: 20px;
+    padding: 20px 0;
+    border-top: 0.8px solid #eeee;
+    border-bottom: 0.8px solid #eeee;
+    font-size: 13px;
+}
+.explain-join{ display: inline-block; text-decoration: none; color: #000;}
+.join-txt{ text-decoration: none; padding-left: 30px;}
+.go-back-home{ padding-top: 28px; }
+.go-back-home a{ text-decoration: none; color: #595959; font-size: 13px; }
+
+/*-----------------------------------------------------------------*/
+/*--------------------------비밀번호생성 팝업창---------------------*/
+.new-pw-window-close { 
+    top: 82px; 
+    left: 64%; 
+    color: #fff; 
+    font-weight: 700;
+    font-size: 18px;
+}
+.popup-content{ display: none;}
+.popup-pw{
+    position: relative;
+    width: 798px;
+    height: 530px;
+    z-index: 83;
+    margin: 70px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.popup-pw-check-inner{ min-width: 100%; }
+.article-text{
+    max-width: 100%;
+    margin: 10px auto;
+    padding: 20px 0;
+    border-bottom: 1px solid darkgrey;
+}
+.article-text > p{ text-align: left; padding-left: 5%;}
+.article-text > p:first-child{font-size: 23px; font-weight: 700;}
+.article-text > p:nth-child(2) {font-size: 15px; }
+
+.manager-form{
+    max-width: 100%;
+}
+.form-modal-pw-find{
+    max-width: 90%;
+    height: 180px;
+    margin:0 auto;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+.form-modal-pw-find label {
+    display: inline-block;
+    min-width: 150px;
+    font-weight: 700;
+}
+.num1{ margin: 20px 0; } 
+.num1 input[type="password"],
+.num2 input[type="password"] { 
+    min-width: 65%;
+    padding: 12px 50px 12px 10px; /* 여백 설정 */ 
+    font-size: 13px;
+}
+.change1 { max-width: 100%; text-align: center; }
+.change1 > button{
+    margin: 20px 0;
+    background-color: #252323;
+    font-weight: 600;
+    color: #fff;
+}
+.change1 > .change { background-color: #8e7ac6;}
+.change1 > button:focus{ color: #cbcbcb; } 

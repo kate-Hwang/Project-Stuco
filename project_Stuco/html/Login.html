@@ -1,0 +1,167 @@
+<!--관리자로그인페이지-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/component/login.css">
+    <link rel="stylesheet" href="../css/base/base.css">
+    <link rel="stylesheet" href="../css/module/basic.css">
+    <link rel="stylesheet" href="../css/lib/modal_style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="../js/custom/modal.js"></script>
+<title>Stuco관리자로그인</title>
+</head>
+
+<body>
+    <!-------------------------관리자로그인페이지-------------------------------->
+        <div id="wrap">
+            <div class="All-boxing">
+                <div class="box-catching">
+                    <div class="logo-box">
+                        <div class="logo"><img src="../img/main/logo.svg" alt="로고이미지" width="50" height="50"></div>
+                        <h1 class="login-name">관리자로그인</h1>
+                    </div>    
+                    <!--사용자가 계정을 입력하는 부분-->
+                    <div class="login-text-box">
+                            <div class="logged-in-box">
+                                <form class="form-box" method="GET" action="">
+                                    <div class="user-write-box">
+
+                                        <div class="user-id"><!--사용자/아이디-->
+                                            <input type="text" name="login" value="" placeholder="아이디" >
+                                        </div>
+
+                                        <div class="user-pw"><!--비밀번호-->
+                                            <input type="password" name="password" value="" placeholder="비밀번호(8자이상)">
+                                        </div>
+                                        <p class="wrong-login">다시입력하세요</p> <!--Ajax 부분-->
+                                    </div> <!--/End of user-write-box/-->
+                                    
+                                        <!--로그인들어가기 버튼-->
+                                    <div class="submit-btn1">
+                                        <button id="btn-login" type="submit" value="">로그인</button>
+                                    </div>
+                                </form> <!-- form -->
+                            </div><!-- logged-in-box -->
+
+                            <!-- 비밀번호 재생성(잃어버렸을때)/회원가입/url재발행-->
+                            <div class="reset-passwd">
+                                <a href="#" class="open">비밀번호찾기</a>
+                            </div>
+                            <div class="join-manager-inner">
+                                <p class="explain-join"><strong>관리자 가입이 필요하신가요?</strong></p>
+                                <a class="join-txt open" href=""><strong>회원가입</strong></a>
+                            </div>
+                            <div class="go-back-home">
+                                <a href="#">STUCO홈페이지바로가기</a>
+                            </div>
+                    </div><!-- login-text-box -->
+                </div><!--box-catching-->
+            </div><!--All-boxing-->
+        </div> <!--wrap--> 
+
+ <!------------------------관리자 계정생성 페이지------------------------------->
+ <div class="popup popup-removeproject">
+    <div class="popup-cover">
+        <div class="popup-content">
+            <span class="close join-window-close">로그인으로 돌아가기</span>
+            <div class="pu-contents">
+
+                <!--content 내용-->
+                <div id="Wrapper">  
+                    <div class="popup-box1">
+                        <div class="content-cover">
+                            <div class="header-box">
+                                <p class="logo2"><img src="../img/main/logo.svg" alt="로고이미지" width="50" height="50"></p>
+                                <h4 class="header-write">계정이 없으신가요?</h4>
+                            </div>
+                            
+                            <!-- 사용자가 계정을 입력하는 부분 -->
+                            <div class="first-session-box">   
+                                <form class="form-box2" method="GET" action="">
+                                    <div class="user-join-id">
+                                        <label for="join-id">이용아이디</label>
+                                        <input type="text" name="login" value="" placeholder="아이디(5자이상)">
+                                    </div>
+        
+                                    <div class="user-join-pw">
+                                        <label for="join-pw">비밀번호</label>
+                                        <input type="password" name="password" value="" placeholder="비밀번호(8자이상)">
+                                    </div>
+        
+                                    <div class="user-join-pw1">
+                                        <input type="password" name="password" value="" placeholder="비밀번호확인(8자이상)">
+                                    </div>
+        
+                                    <p class="wrong-join">비밀번호가 같지않습니다</p>
+                                </form>   
+                                <div class="submit-btn2">
+                                    <button type="submit" id="click-start">계정생성</button>
+                                </div> 
+                                <!-- <div class="return-login">
+                                    <a href="">로그인으로 돌아가기</a>
+                                </div> -->
+                            </div> <!--first-session-box-->
+                        </div> <!--content-cover-->
+                    </div> <!--popup-box1-->
+                </div> <!--end Wrapper-->
+            
+                <!--content 내용-->
+            </div>
+        </div>
+    </div>
+    <div class="dim"></div>
+</div>
+<!--end of popup-->        
+
+    <!-----------------------------비밀번호찾기------------------------------------->
+    
+        <div class="popup popup-removeproject">
+                <div class="popup-cover">
+                    <div class="popup-content">
+                        <span class="close new-pw-window-close">X</span>
+                        <div class="pu-contents">
+                            <!--content 내용-->
+                            <div class="popup-pw">
+                                <div class="topbar">
+                                    <p>비밀번호 생성</p>
+                                </div>
+                                
+                                <div class="popup-pw-check-inner">
+                                    <div class="article-text">
+                                        <p>비밀번호가 기억나지 않으신가요? :-)</p>
+                                        <p>*기존 비밀번호는 삭제되고 새로운 비밀번호가 생성됩니다.</p>
+                                    </div>    
+    
+                                    <div class="manager-form">
+                                        <form class="form-modal-pw-find" method="" id="" action="">
+                                            <div class="num1">                                                
+                                                <label for="mamager-pw">관리자 비밀번호</label>
+                                                <input type="password" name="password" maxlength="10" placeholder="10자이상적어주세요" title = "숫자,영문자 형식으로 입력해주세요">
+                                            </div>
+                                            
+                                            <div class="num2">
+                                                <label for="mamager-pw-check">관리자 비밀번호 확인</label>
+                                                <input type="password" name="password" value="" maxlength="10" placeholder="10자이상적어주세요" title = "숫자,영문자 형식으로 입력해주세요">
+                                            </div>                       
+                                        </form> 
+    
+                                        <!--변경,취소 버튼-->
+                                        <div class="change1">
+                                            <button type="button" class="Cancel">취 소</button>
+                                            <button type="submit" class="change">변 경</button>
+                                        </div>
+                                    </div><!-- manager-form -->
+                                </div> <!-- popup-pw-check-inner -->
+                            </div> <!-- popup-pw -->
+                            <!--content 내용-->
+                        </div>
+                    </div>
+                </div>
+                <div class="dim"></div>
+            </div> 
+        <!--END OF POPUP-PW / 비밀번호찾기-->   
+</body>
+</html>

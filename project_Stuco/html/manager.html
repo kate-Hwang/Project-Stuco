@@ -1,0 +1,151 @@
+<!--관리자페이지-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>관리자페이지</title>
+    <link rel="stylesheet" href="../css/module/basic.css">
+    <link rel="stylesheet" href="../css/base/base.css">
+    <link rel="stylesheet" href="../css/component/manager.css">
+    <link rel="stylesheet" href="../css/lib/modal_style.css">
+    <script src="../js/custom/modal.js"></script>
+</head>
+<body>
+    <div class="popup popup-removeproject">
+            <div class="popup-cover">
+                <div class="popup-content">
+                    <span class="close">닫기</span>
+                    <div class="pu-contents">
+                        <!--content 내용-->
+                    <div class="topbar"><p>프로젝트 생성</p></div>
+                    <h3 class="qeust">새로운 프로젝트를 운영하시겠어요? :)</h3>
+                    <section class="new-project-box">
+                        <div class="name_box">
+                            <p>프로젝트 이름</p>
+                            <input type="text" name="text" value="">
+                            <p class="private-txt1">100자 이내</p>
+                        </div>
+                        <div class="pw_box">
+                            <p>프로젝트 비밀번호</p>
+                            <input type="password" name="password" value="">
+                            <p class="private-txt2">8자 이내</p>
+            
+                            <p>프로젝트 비밀번호 확인</p>
+                            <input type="password" name="password" value="">
+                            <p class="private-txt3">8자 이내</p>
+                        </div>
+            
+                        <div class="comment">
+                            <p>코멘트 및 설명</p>
+                            <textarea name="simple_comment" id="" cols="55" rows="5"></textarea>
+                        </div>
+                        <div class="btn-cover-box">
+                            <div class="start-btn">
+                                <button type="submit">운영 시작</button>
+                            </div>
+                        </div>
+                    </section>
+                        <!--content 내용-->
+                    </div>
+                </div>
+            </div>
+            <div class="dim"></div>
+        </div>
+        <!--end of popup-->
+
+    <div id="wrap">
+        <header id="header">
+            <div class="header-nav">
+                <div class="nav-content">
+                    <div class="logo"><img src="../img/main/logo.svg" alt="logo"></div>
+                    <p class="click-in"><a href="#" class="click-show-pp">프로젝트 생성</a></p>
+                    <p class="word-page"><a href="#">홈페이지가기</a></p>
+                    <p class="logout"><a href="">로그아웃</a></p>
+                </div>
+            </div>
+        </header>
+
+        <section id="manager-content-box">
+            <div class="table-cover-box">
+                <div class="ID-show">
+                    <ul class="show-txt">
+                        <li>● </li>
+                        <li>반갑습니다</li>
+                        <li class="data" name="" value=""><strong>admin5880</strong></li>
+                        <li>님</li>
+                    </ul><!--사용자계정들어갈곳.-->
+                </div>
+                <!--현재 관리하고있는 프로젝트 리스트 테이블-->
+                <div class="table-name">
+                    <img class="graph" src="../img/main/chart_black_18dp.png" alt="icons">
+                    <h4>현재 생성 프로젝트 현왕 및 설정</h4>
+                </div>
+                <div class="table-box">
+                    <table class="project-list">
+                        <thead class="list-title">
+                            <tr class="project-main-list">
+                                <th>/</th>
+                                <th class="project-name">프로젝트명</th>  <!--Data 입력부분 :  프로젝트명/ 생성일시 / 접속수 / 설정-->
+                                <th>생성일시</th>
+                                <th>접속 수</th>
+                                <th>삭  제</th>
+                                <th>설  정</th>
+                            </tr>
+                        </thead>
+                
+                        <tbody class="table-content">
+                            <tr>
+                                <th></th>
+                                <td>NCS국비지원-프론트엔드(1)</td>  <!--Data-->
+                                <td>2019-05-01</td>                 <!--Data-->
+                                <td>5명</td>                        <!--Data-->
+                                <td><button id="Delete-btn">삭제</button></td>
+                                <td><a href="#"><img src="../img/main/settings_black_18dp.png" alt="setting"></a></td>
+                            </tr>
+
+                            <tr>
+                                <th></th>
+                                <td>도커(Docker)를 활용한 클라우드 서비스 구축 과정</td> <!--Data-->
+                                <td>2019-06-58</td>                                     <!--Data-->
+                                <td>13명</td>                                           <!--Data-->
+                                <td><button id="Delete-btn">삭제</button></td>
+                                <td><a href="#"><img src="../img/main/settings_black_18dp.png" alt="setting"></a></td>
+                            </tr>
+
+                            <tr>
+                                <th></th>
+                                <td>자바(JAVA)개발자&안드로이드 앱 개발 양성과정</td>   <!--Data-->
+                                <td>2019-08-08</td>                                  <!--Data-->
+                                <td>10명</td>                                        <!--Data-->
+                                <td><button id="Delete-btn">삭제</button></td>
+                                <td><a href="#"><img src="../img/main/settings_black_18dp.png" alt="setting"></a></td>
+                            </tr>
+                            
+                            <!-- <tr>
+                                <th></th>
+                                <td>블록체인 기반의 IOT 기획 및 설계</td>              
+                                <td>2019-07-25</td>                                  
+                                <td>20명</td>                                        
+                                <td><button id="Delete-btn">삭제</button></td>
+                                <td><a href="#">icons</a></td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <!--관리자주의사항(공지사항)-->
+                <article class="article-notice">
+                        <div class="text-notice">
+                            <h3>※ 관리자 주의사항</h3>
+                            <p>-프로젝트 삭제시 복원 불가능합니다.</p>
+                            <p>-최대 4개의 프로젝트생성이 가능합니다.</p>
+                            <p>-프로젝트 제목은 100자 이하로 만들어 주시길바랍니다.</p>
+                        </div> 
+                </article>
+            </div> <!--table-cover-box-->
+        </section> <!--End of contents stuff-->
+    </div><!--End of wrap-->
+</body>
+</html>

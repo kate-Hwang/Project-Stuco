@@ -1,0 +1,6 @@
+/*기본으로 무조건으로 지정되야하는것!*/
+
+body, html{ 
+    margin:0; 
+    padding:0 
+} 

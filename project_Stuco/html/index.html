@@ -1,0 +1,153 @@
+<!--스튜코메인페이지-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/component/index.css">
+    <link rel="stylesheet" href="../css/base/base.css">
+    <title>Stuko</title>
+</head>
+<body>
+    <div class="wrap">
+        <!--배경이미지 설정 잊지말것-->
+        <div class="main-display">
+            <div class="main-display-inner">
+                <div class="logo"></div>
+                <div class="display-introduce-page">
+                    <div class="image-moving"><!--메인이미지-->
+                        <img src="https://source.unsplash.com/500x400/?computer" alt="main-image">
+                    </div>
+
+                    <div class="promotion">
+                        <div class="prom-logo">big-logo</div>
+                        <!--stuko 홍보글-->
+                        <p class="prom-txt">
+                            ‘궁금한게있어요!’<br>
+                            궁금한게 있지만 질문하기가 어려운신가요?<br>
+                            질문이 두려우신가요? 걱정마세요!<br>
+                            우리는 익명이니까요!<br>
+                            코딩이 어려운 당신을 위해서 모두를 위해서<br>
+                            그것이 우리의 서비스가 존재하는 이유입니다.
+                        </p>
+                        <div class="btn-sub-start">
+                            <button class="st-btn" type="button">Start Service</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- main-display -->    
+
+        <section class="project-box">
+            <div class="class-list">
+                <h3>현재 진행중인 수업</h3>
+            </div>
+            <!--Swiper Slide page Style / HTML-->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!--Slide inside stuff Things-->
+                  <div class="swiper-slide">
+                    <div class="display-table large" data-target="#pp-first">
+                        <div class="image-stage-Data">
+                            <img src="https://source.unsplash.com/350x160/?hardware" alt="image-1">
+                        </div>
+                        <button class="hover-title-box" type="button" target="_blank" onclick="window.open('http://uniquepro.pe.kr/html/')" >
+                            <h3 class="text-white" name="" value=""><strong>WEB Front-end 구현개발자과정</strong></h3> <!--data-->
+                        </button>
+                    </div><!-- End display-table-1 -->
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="display-table large" data-target="#pp-second">
+                        <div class="image-stage-Data">
+                            <img src="https://source.unsplash.com/350x160/?coder" alt="image-2">
+                        </div>
+                        <button class="hover-title-box" type="button" target="_blank" onclick="window.open('http://uniquepro.pe.kr/html/')" >
+                            <h3 class="text-white" name="" value=""><strong>Big data 개발자과정</strong></h3> <!--data-->
+                        </button>
+                    </div><!-- End display-table-2 -->
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="display-table large" data-target="#pp-third">
+                        <div class="image-stage-Data">
+                            <img src="https://source.unsplash.com/350x160/?software" alt="image-3">
+                        </div>
+                        <button class="hover-title-box" type="button" target="_blank" onclick="window.open('http://uniquepro.pe.kr/html/')" >
+                            <h3 class="text-white" name="" value=""><strong>Data developer개발자과정</strong></h3> <!--data-->
+                        </button>
+                    </div><!-- End display-table-3 -->
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="display-table large" data-target="#pp-fourth">
+                        <div class="image-stage-Data">
+                            <img src="https://source.unsplash.com/350x160/?data" alt="image-4">
+                        </div>
+                        <button class="hover-title-box" type="button" target="_blank" onclick="window.open('http://uniquepro.pe.kr/html/')" >
+                            <h3 class="text-white" name="" value=""><strong>WEB Java 구현개발자과정</strong></h3> <!--data-->
+                        </button>
+                    </div><!-- End display-table-4 -->
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="display-table large" data-target="#pp-five">
+                        <div class="image-stage-Data">
+                            <img src="https://source.unsplash.com/350x160/?phone" alt="image-5">
+                        </div>
+                        <button class="hover-title-box" type="button" target="_blank" onclick="window.open('http://uniquepro.pe.kr/html/')" >
+                            <h3 class="text-white" name="" value=""><strong>App 구현개발자과정</strong></h3> <!--data-->
+                        </button>
+                    </div><!-- End display-table-5 -->
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="display-table large" data-target="#pp-six">
+                        <div class="image-stage-Data">
+                            <img src="https://source.unsplash.com/350x160/?application" alt="image-6">
+                        </div>
+                        <button class="hover-title-box" type="button" target="_blank" onclick="window.open('http://uniquepro.pe.kr/html/')" >
+                            <h3 class="text-white" name="" value=""><strong>App 구현개발자과정-2</strong></h3> <!--data-->
+                        </button>
+                    </div><!-- End display-table-6 -->
+                  </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+              </div>
+
+                <!-- Swiper JS -->
+                <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+                <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+              <!-- Initialize Swiper -->
+              <script>
+                    /* Swiper Slide API JS */
+                    var swiper = new Swiper('.swiper-container', {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                    });
+              </script>
+        </section>
+
+        <section class="promotion-about-web">
+
+        </section>
+
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="footer-inner">
+                    <div class="footer-logo"></div>
+                    <div class="copyright">
+                        <p>Stuko의 저작권은 배포자인 Stuko에 있습니다.</p>
+                        <p>ⓒ Stuko,All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+    </div> <!--end of wrap-->
+</body>
+</html>

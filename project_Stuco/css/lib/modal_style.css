@@ -1,0 +1,79 @@
+/*팝업창 css*/
+.block {
+    display: block!important; /*스타일에서 우선순위를 올려주는 속성*/
+}
+.popup{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.popup .close {
+    position: absolute;
+    z-index: 120;
+    cursor: pointer;
+}
+.popup-cover{
+    height: 100%;
+}
+.popup-cover:after{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    content: '';
+}
+.popup-content{
+    display: inline-block;
+    position: relative;
+    min-width: 100%;
+}
+
+.pw-bg-dim{
+    background-color: #000;
+    opacity: 0.45;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 80;
+}
+.dim{
+    display: none;
+    background-color: #000;
+    opacity: 0.45;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 80;
+}
+
+/*popup클래스 명에 따른 alert 창 디자인*/
+.popup-createproject .popup-content{
+    min-width: 800px;
+}
+.popup-CreatePassword .dim{ display: block; }
+.popup-removeproject .dim{
+    display: block;
+}
+
+/*contents windows창 basic-style*/
+.topbar{
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #8e7ac6;
+}
+.topbar > p{
+    margin: 0;
+    padding: 16px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+}
