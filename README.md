@@ -38,7 +38,7 @@
 
 ### 기획
 
-[<img src="UI정의서img.png" width="900" height="120" hspace="2">](/화면정의서_인쇄2.pdf)
+[<img src="UI-Struct-img.png" width="900" height="120" hspace="2">](/화면정의서_인쇄2.pdf)
 [프로젝트 Stuco 기획안](/화면정의서_인쇄2.pdf)
 
 ### Trouble Shooting
