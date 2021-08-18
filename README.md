@@ -1,7 +1,5 @@
 # Project-Stuco
 
-# **kate Hwang (황 지 영)**
-
 ### 개인정보
 - [WebSite- Uniquepro](http://uniquepro.pe.kr/)
 - [ghkd6385@naver.com](ghkd6385@naver.com)
