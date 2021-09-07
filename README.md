@@ -28,6 +28,7 @@
 
 ### 사이트이미지
 
+<img src="/logo_marketing_image.PNG" width="500" height="144" hspace="2">
 <img src="/imac_목업이미지2.png" width="800" height="650" hspace="2">
 
 ### 기획
