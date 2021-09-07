@@ -81,7 +81,7 @@
     ```
     // views.py -> public이 선택된 사진만 모델에서 불러옴.
     photo_list = Photo.objects.filter(is_public=True)[:20]
-    ```  
+  ```  
 
 ### Trouble Shooting
 - 문제내용1
