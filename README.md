@@ -1,9 +1,5 @@
 # Project-Stuco
 
-### 개인정보
-- [WebSite- Uniquepro](http://uniquepro.pe.kr/)
-- [ghkd6385@naver.com](ghkd6385@naver.com)
-
 ### 전체프로젝트 개발환경(구상)
 
 - OS  :`window`, `Mac OS X(Unix)`
