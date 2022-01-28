@@ -9,7 +9,7 @@
 
 - WEB : `HTML5(html,css,javascript)` , `Jquery` , `Ajax` , `vue`
 
-- Test BROWSER : `Google Chrome` , `MS IE & Edge` , `Mozilla Firefox` , `Opera` , `Apple Safari`
+- Test BROWSER : `Google Chrome` , `MS IE & Edge` , `Mozilla Firefox` , `Apple Safari`
 
 ### 담당 수행 역할
 - 전체 화면 UI (화면정의서) 기획
