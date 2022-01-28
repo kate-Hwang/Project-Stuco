@@ -7,7 +7,7 @@
 
 - WAS : `Apache Tomcat 8.5` , `Apache Tomcat 8.0 for Window, Mac`
 
-- WEB : `HTML5(html,css,javascript)` , `Jquery` , `Ajax` , `vue`
+- WEB : `HTML5(html,scss,javascript)` , `Jquery`
 
 - Test BROWSER : `Google Chrome` , `MS IE & Edge` , `Mozilla Firefox` , `Apple Safari`
 
