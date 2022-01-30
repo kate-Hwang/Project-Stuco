@@ -21,7 +21,7 @@ body {
     margin: 0 auto;
 }
 .logo{
-    background-color: gray;
+    border: 1px solid darkslategray;
     width: 50px;
     height: 50px;
 }
@@ -41,11 +41,12 @@ body {
 .prom-logo{
     width: 200px;
     height: 50px;
-    background-color: gray;
+    border: 1px solid darkgreen;
 }
 .prom-txt{
+    line-height: 30px;
     letter-spacing: 2px;
-    font-size: 15px;
+    font-size: 17px;
     color: #000;
 }
 .btn-sub-start{
@@ -125,8 +126,7 @@ body {
   }
   
 /*------하단 footer-------*/
-.footer{ background: #2D2D2D; }
-.footer-top{ padding: 32px 0 36px 0; }
+.footer{ background: #2D2D2D; padding: 70px 0;}
 .footer-inner{
     width: 100%;
     max-width: 1220px;
@@ -137,7 +137,10 @@ body {
     display: inline-block;
     width: 80px;
     height: 80px;
-    background-color: white;
+}
+.footer-logo img{
+    /*회색계열로 색상전환*/
+    background-color: rgba(0, 0, 0, 0.7) no-repeat;
 }
 .copyright{
     vertical-align: top;
