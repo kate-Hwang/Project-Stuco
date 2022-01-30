@@ -6,22 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/component/index.css">
     <link rel="stylesheet" href="../css/base/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <title>Stuco</title>
 </head>
 <body>
     <div class="wrap">
-        <!--배경이미지 설정 잊지말것-->
         <div class="main-display">
             <div class="main-display-inner">
-                <div class="logo"></div>
+                <img class="logo" src="/project_Stuco/img/main/logo.svg" alt="로고">
                 <div class="display-introduce-page">
-                    <div class="image-moving"><!--메인이미지-->
+                    <div class="image-moving">
                         <img src="https://source.unsplash.com/500x400/?computer" alt="main-image">
                     </div>
                     <div class="promotion">
                         <div class="prom-logo">big-logo</div>
-                        <!--stuko 홍보글-->
+                        <!--홍보글-->
                         <p class="prom-txt">
                             ‘궁금한게있어요!’<br>
                             궁금한게 있지만 질문하기가 어려운신가요?<br>
@@ -36,7 +37,7 @@
                     </div>
                 </div>
             </div>
-        </div> <!-- main-display -->    
+        </div>     
         <section class="project-box">
             <div class="class-list">
                 <h3>진행중인 클라우드</h3>
@@ -48,19 +49,23 @@
         </section>
 
         <section class="promotion-about-web">
-            
+            <!--움직이는 로티이미지-->
+            <div class="moving-image" style="position:absolute; top: calc(50vh - 112.5px); left: calc(50vw - 150px);">
+                <lottie-player src="/project_Stuco/img/74114-cooperation.json" background="transparent" style="width: 500px; height: 425px;" speed="1" loop autoplay>
+                </lottie-player>
+            </div>
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
         </section>
 
         <footer class="footer">
-                <div class="footer-inner">
-                    <div class="footer-logo"><img src="/project_Stuco/img/main/logo.svg" alt="footer-logo"></div>
-                    <div class="copyright">
-                        <p>Stuco의 저작권은 배포자인 Stuco에 있습니다.</p>
-                        <p>ⓒ Stuco,All rights reserved.</p>
-                    </div>
+            <div class="footer-inner">
+                <div class="footer-logo"><img src="/project_Stuco/img/main/logo.svg" alt="footer-logo"></div>
+                <div class="copyright">
+                    <p>Stuco의 저작권은 배포자인 Stuco에 있습니다.</p>
+                    <p>ⓒ Stuco,All rights reserved.</p>
                 </div>
-        </footer>
-        
-    </div> <!--end of wrap-->
+            </div>
+        </footer> 
+    </div>
 </body>
 </html>

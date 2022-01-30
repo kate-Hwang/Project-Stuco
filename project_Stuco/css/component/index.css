@@ -20,11 +20,7 @@ body {
     width: 1220px;
     margin: 0 auto;
 }
-.logo{
-    border: 1px solid darkslategray;
-    width: 50px;
-    height: 50px;
-}
+.logo{ width: 50px; height: 50px; }
 .display-introduce-page{
     display: inline-block;
     min-width: 1220px;
@@ -79,12 +75,6 @@ body {
     color: #2D2D2D;
     font-size: 1.5rem;
 }
-.promotion-about-web{
-    width: 100%;
-    margin: 0 auto;
-    height: 500px;
-    background-color: white;
-}
 /*Swiper Slide CSS Style*/
 .project-box {
     background: #eee;
@@ -96,35 +86,19 @@ body {
     margin: 0 auto;
     padding: 20px 0;
   }
-  
-  /*전체 박스 사이즈 및 내용 stage*/
-  .display-table{ width: 350px; }
-  /*이미지 div*/
-  .image-stage-Data{ width: 350px; height: 160px; }
-  /*방제목 div*/
-  .hover-title-box{
-      width: 350px;
-      height: 110px;
-      cursor:pointer;
-      
-      /*button Style css : none*/
-      border: none;
-      background-color: inherit;
-      margin: 0;
-      padding: 0;
-  }
-  .text-white{
-      width: 280px;
-      height: 82px;
-      margin: 8px auto;
-      padding: 10px 0;
-  }
-  .text-white strong{
-      line-height: 60px;
-      font-size: 1.2rem;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
+
+.promotion-about-web{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    height: 500px;
+    background-color: white;
+}
+/*-- Lottie-style --*/
+.moving-image{
+    
+}
+
 /*------하단 footer-------*/
 .footer{ background: #2D2D2D; padding: 70px 0;}
 .footer-inner{
