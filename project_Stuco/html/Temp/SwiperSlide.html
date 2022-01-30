@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiperSlide</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"> 
+</head>
+
+<style>
+   html, body{ position: relative; }
+  .swiper{ width: 1220px; height: 85%; }
+  .swiper-wrapper{ height: 350px; padding-left: 30px; }
+  .swiper-slide {
+    max-width: 350px;
+    height: 270px;
+    margin: 15px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 10px;
+    box-shadow: 10px 8px 22px lightgrey;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    }
+    /*전체 박스 사이즈 및 내용 stage*/
+    .display-table{ width: 350px; }
+    /*이미지 div*/
+    .image-stage-Data{ width: 350px; height: 160px; }
+    /*방제목 div*/
+    .hover-title-box{
+        width: 350px;
+        height: 110px;
+        cursor:pointer;
+        
+        /*button Style css : none*/
+        border: none;
+        background-color: inherit;
+        margin: 0;
+        padding: 0;
+    }
+    .text-white{
+        width: 280px;
+        height: 82px;
+        margin: 8px auto;
+        padding: 10px 0;
+    }
+    .text-white strong{
+        font-size: 1.2rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .swiper-pagination{ font-size: 18px; }
+</style>
+
+<body>
+      <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="display-table large" data-target="#pp-first">
+                        <div class="image-stage-Data">
+                            <img src="https://source.unsplash.com/350x160/?hardware" alt="image-1">
+                        </div>
+                        <button class="hover-title-box" type="button" target="_blank" onclick="window.open('http://uniquepro.pe.kr/html/')" >
+                            <h3 class="text-white" name="" value=""><strong>오늘도 반갑습니다</strong></h3> <!--data-->
+                        </button>
+                    </div><!-- End display-table-1 -->
+                </div>
+                <div class="swiper-slide">
+                    <div class="display-table large" data-target="#pp-second">
+                        <div class="image-stage-Data">
+                            <img src="https://source.unsplash.com/350x160/?coder" alt="image-2">
+                        </div>
+                        <button class="hover-title-box" type="button" target="_blank" onclick="window.open('https://www.naver.com/')" >
+                            <h3 class="text-white" name="" value=""><strong>오늘도 반갑습니다</strong></h3> <!--data-->
+                        </button>
+                    </div><!-- End display-table-2 -->
+                </div>
+                <div class="swiper-slide">
+                    <div class="display-table large" data-target="#pp-third">
+                        <div class="image-stage-Data">
+                            <img src="https://source.unsplash.com/350x160/?software" alt="image-3">
+                        </div>
+                        <button class="hover-title-box" type="button" target="_blank" onclick="window.open('https://www.naver.com/')" >
+                            <h3 class="text-white" name="" value=""><strong>오늘도 반갑습니다</strong></h3> <!--data-->
+                        </button>
+                    </div><!-- End display-table-3 -->
+                </div>
+                <div class="swiper-slide">
+                    <div class="display-table large" data-target="#pp-fourth">
+                        <div class="image-stage-Data">
+                            <img src="https://source.unsplash.com/350x160/?data" alt="image-4">
+                        </div>
+                        <button class="hover-title-box" type="button" target="_blank" onclick="window.open('https://www.naver.com/')" >
+                            <h3 class="text-white" name="" value=""><strong>오늘도 반갑습니다</strong></h3> <!--data-->
+                        </button>
+                    </div><!-- End display-table-4 -->
+                </div>
+                <div class="swiper-slide">
+                    <div class="display-table large" data-target="#pp-five">
+                        <div class="image-stage-Data">
+                            <img src="https://source.unsplash.com/350x160/?phone" alt="image-5">
+                        </div>
+                        <button class="hover-title-box" type="button" target="_blank" onclick="window.open('https://www.naver.com/')" >
+                            <h3 class="text-white" name="" value=""><strong>오늘도 반갑습니다</strong></h3> <!--data-->
+                        </button>
+                    </div><!-- End display-table-5 -->
+                </div>
+                <div class="swiper-slide">
+                    <div class="display-table large" data-target="#pp-six">
+                        <div class="image-stage-Data">
+                            <img src="https://source.unsplash.com/350x160/?application" alt="image-6">
+                        </div>
+                        <button class="hover-title-box" type="button" target="_blank" onclick="window.open('https://www.naver.com/')" >
+                            <h3 class="text-white" name="" value=""><strong>오늘도 반갑습니다</strong></h3> <!--data-->
+                        </button>
+                    </div><!-- End display-table-6 -->
+                </div>
+            </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+      <script>
+        const swiper = new Swiper('.swiper', {
+            //speed
+            speed: 1000,
+            slidesPerView: 3,
+            // Optional parameters
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'fraction',
+            },
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            keyboard: {
+                enabled: true,
+                onlyInViewport: false,
+            },    
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+      </script>
+</body>
+</html>

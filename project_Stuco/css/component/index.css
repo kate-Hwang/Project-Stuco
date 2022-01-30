@@ -95,31 +95,7 @@ body {
     margin: 0 auto;
     padding: 20px 0;
   }
-  .swiper-container { width: 1220px; height: 85%; }
-  .swiper-slide {
-    max-width: 350px;
-    height: 270px;
-    margin: 15px;
-    text-align: center;
-    font-size: 18px;
-    border-radius: 10px;
-    box-shadow: 10px 8px 22px lightgrey;
-    background: #fff;
-
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
+  
   /*전체 박스 사이즈 및 내용 stage*/
   .display-table{ width: 350px; }
   /*이미지 div*/
@@ -143,6 +119,7 @@ body {
       padding: 10px 0;
   }
   .text-white strong{
+      line-height: 60px;
       font-size: 1.2rem;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }

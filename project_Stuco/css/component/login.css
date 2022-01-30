@@ -1,5 +1,5 @@
 @charset "utf-8";
-/*-----최초 계정 만들기-----*/
+/*-----최초 계정 만들기(PopUp_window)-----*/
 .join-window-close {
     font-size: 13px;
     color: #000; 
@@ -46,13 +46,8 @@
 }
 /*----관리자 계정만들기 창----*/
 .user-write-box{ margin-bottom: 5%; }
-
-/*---------------------------*/
 .first-session-box{ max-width: 100%; }
-.form-box2{
-    max-width: 100%;
-    font-size: 13px;
-}
+.form-box2{ max-width: 100%; font-size: 13px; }
 .user-join-id input[type="text"], 
 .user-join-pw input[type="password"], 
 .user-join-pw1 input[type="password"]{
@@ -172,7 +167,7 @@ input[type="password"]:focus { outline:0; }
 /*로그인 확인 버튼*/
 .submit-btn1{ max-width: 100%; }
 #btn-login{
-    min-width: 88%;
+    min-width: 75%;
     height: 48px;
     margin: 10px 0;
     color: #fff;
@@ -188,7 +183,7 @@ input[type="password"]:focus { outline:0; }
 }
 /*--------------비밀번호 재생성(잃어버렸을때)----------------*/
 .reset-passwd{
-    max-width: 94%;
+    max-width: 88%;
     text-align: right;
 }
 .reset-passwd > a{

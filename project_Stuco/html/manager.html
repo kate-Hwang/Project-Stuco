@@ -10,57 +10,16 @@
     <link rel="stylesheet" href="../css/base/base.css">
     <link rel="stylesheet" href="../css/component/manager.css">
     <link rel="stylesheet" href="../css/lib/modal_style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="../js/custom/modal.js"></script>
 </head>
 <body>
-    <div class="popup popup-removeproject">
-            <div class="popup-cover">
-                <div class="popup-content">
-                    <span class="close">닫기</span>
-                    <div class="pu-contents">
-                        <!--content 내용-->
-                    <div class="topbar"><p>프로젝트 생성</p></div>
-                    <h3 class="qeust">새로운 프로젝트를 운영하시겠어요? :)</h3>
-                    <section class="new-project-box">
-                        <div class="name_box">
-                            <p>프로젝트 이름</p>
-                            <input type="text" name="text" value="">
-                            <p class="private-txt1">100자 이내</p>
-                        </div>
-                        <div class="pw_box">
-                            <p>프로젝트 비밀번호</p>
-                            <input type="password" name="password" value="">
-                            <p class="private-txt2">8자 이내</p>
-            
-                            <p>프로젝트 비밀번호 확인</p>
-                            <input type="password" name="password" value="">
-                            <p class="private-txt3">8자 이내</p>
-                        </div>
-            
-                        <div class="comment">
-                            <p>코멘트 및 설명</p>
-                            <textarea name="simple_comment" id="" cols="55" rows="5"></textarea>
-                        </div>
-                        <div class="btn-cover-box">
-                            <div class="start-btn">
-                                <button type="submit">운영 시작</button>
-                            </div>
-                        </div>
-                    </section>
-                        <!--content 내용-->
-                    </div>
-                </div>
-            </div>
-            <div class="dim"></div>
-        </div>
-        <!--end of popup-->
-
     <div id="wrap">
         <header id="header">
             <div class="header-nav">
                 <div class="nav-content">
                     <div class="logo"><img src="../img/main/logo.svg" alt="logo"></div>
-                    <p class="click-in"><a href="#" class="click-show-pp">프로젝트 생성</a></p>
+                    <p class="click-in"><a href=".popup-notice-write" class="click-show-pp">프로젝트 생성</a></p>
                     <p class="word-page"><a href="#">홈페이지가기</a></p>
                     <p class="logout"><a href="">로그아웃</a></p>
                 </div>
@@ -122,15 +81,6 @@
                                 <td><button id="Delete-btn">삭제</button></td>
                                 <td><a href="#"><img src="../img/main/settings_black_18dp.png" alt="setting"></a></td>
                             </tr>
-                            
-                            <!-- <tr>
-                                <th></th>
-                                <td>블록체인 기반의 IOT 기획 및 설계</td>              
-                                <td>2019-07-25</td>                                  
-                                <td>20명</td>                                        
-                                <td><button id="Delete-btn">삭제</button></td>
-                                <td><a href="#">icons</a></td>
-                            </tr> -->
                         </tbody>
                     </table>
                 </div>
@@ -147,5 +97,48 @@
             </div> <!--table-cover-box-->
         </section> <!--End of contents stuff-->
     </div><!--End of wrap-->
+    <div class="popup popup-removeproject">
+        <div class="popup-cover">
+            <div class="popup-content">
+                <span class="close">닫기</span>
+                <div class="pu-contents">
+                    <!--content 내용-->
+                    <div class="PP_wrap">
+                        <div class="topbar"><p>프로젝트 생성</p></div>
+                        <h3 class="qeust">새로운 프로젝트를 운영하시겠어요? :)</h3>
+                        <section class="new-project-box">
+                            <div class="name_box">
+                                <p>프로젝트 이름</p>
+                                <input type="text" name="text" value="">
+                                <p class="private-txt1">100자 이내</p>
+                            </div>
+                            <div class="pw_box">
+                                <p>프로젝트 비밀번호</p>
+                                <input type="password" name="password" value="">
+                                <p class="private-txt2">8자 이내</p>
+                
+                                <p>프로젝트 비밀번호 확인</p>
+                                <input type="password" name="password" value="">
+                                <p class="private-txt3">8자 이내</p>
+                            </div>
+                
+                            <div class="comment">
+                                <p>코멘트 및 설명</p>
+                                <textarea name="simple_comment" id="" cols="55" rows="5"></textarea>
+                            </div>
+                            <div class="btn-cover-box">
+                                <div class="start-btn">
+                                    <button type="submit">운영 시작</button>
+                                </div>
+                            </div>
+                        </section>
+                    </div> <!--PP_wrap-->
+                    <!--content 내용-->
+                </div>
+            </div>
+        </div>
+        <div class="dim"></div>
+    </div>
+    <!--end of popup-->
 </body>
 </html>

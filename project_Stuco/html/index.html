@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="../css/component/index.css">
     <link rel="stylesheet" href="../css/base/base.css">
     <title>Stuko</title>
@@ -40,98 +38,15 @@
                 </div>
             </div>
         </div> <!-- main-display -->    
-
         <section class="project-box">
             <div class="class-list">
                 <h3>현재 진행중인 수업</h3>
             </div>
             <!--Swiper Slide page Style / HTML-->
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <!--Slide inside stuff Things-->
-                  <div class="swiper-slide">
-                    <div class="display-table large" data-target="#pp-first">
-                        <div class="image-stage-Data">
-                            <img src="https://source.unsplash.com/350x160/?hardware" alt="image-1">
-                        </div>
-                        <button class="hover-title-box" type="button" target="_blank" onclick="window.open('http://uniquepro.pe.kr/html/')" >
-                            <h3 class="text-white" name="" value=""><strong>WEB Front-end 구현개발자과정</strong></h3> <!--data-->
-                        </button>
-                    </div><!-- End display-table-1 -->
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="display-table large" data-target="#pp-second">
-                        <div class="image-stage-Data">
-                            <img src="https://source.unsplash.com/350x160/?coder" alt="image-2">
-                        </div>
-                        <button class="hover-title-box" type="button" target="_blank" onclick="window.open('http://uniquepro.pe.kr/html/')" >
-                            <h3 class="text-white" name="" value=""><strong>Big data 개발자과정</strong></h3> <!--data-->
-                        </button>
-                    </div><!-- End display-table-2 -->
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="display-table large" data-target="#pp-third">
-                        <div class="image-stage-Data">
-                            <img src="https://source.unsplash.com/350x160/?software" alt="image-3">
-                        </div>
-                        <button class="hover-title-box" type="button" target="_blank" onclick="window.open('http://uniquepro.pe.kr/html/')" >
-                            <h3 class="text-white" name="" value=""><strong>Data developer개발자과정</strong></h3> <!--data-->
-                        </button>
-                    </div><!-- End display-table-3 -->
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="display-table large" data-target="#pp-fourth">
-                        <div class="image-stage-Data">
-                            <img src="https://source.unsplash.com/350x160/?data" alt="image-4">
-                        </div>
-                        <button class="hover-title-box" type="button" target="_blank" onclick="window.open('http://uniquepro.pe.kr/html/')" >
-                            <h3 class="text-white" name="" value=""><strong>WEB Java 구현개발자과정</strong></h3> <!--data-->
-                        </button>
-                    </div><!-- End display-table-4 -->
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="display-table large" data-target="#pp-five">
-                        <div class="image-stage-Data">
-                            <img src="https://source.unsplash.com/350x160/?phone" alt="image-5">
-                        </div>
-                        <button class="hover-title-box" type="button" target="_blank" onclick="window.open('http://uniquepro.pe.kr/html/')" >
-                            <h3 class="text-white" name="" value=""><strong>App 구현개발자과정</strong></h3> <!--data-->
-                        </button>
-                    </div><!-- End display-table-5 -->
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="display-table large" data-target="#pp-six">
-                        <div class="image-stage-Data">
-                            <img src="https://source.unsplash.com/350x160/?application" alt="image-6">
-                        </div>
-                        <button class="hover-title-box" type="button" target="_blank" onclick="window.open('http://uniquepro.pe.kr/html/')" >
-                            <h3 class="text-white" name="" value=""><strong>App 구현개발자과정-2</strong></h3> <!--data-->
-                        </button>
-                    </div><!-- End display-table-6 -->
-                  </div>
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-              </div>
-
-                <!-- Swiper JS -->
-                <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-                <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-              <!-- Initialize Swiper -->
-              <script>
-                    /* Swiper Slide API JS */
-                    var swiper = new Swiper('.swiper-container', {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true,
-                    },
-                    });
-              </script>
+            <div data-include-path="Temp/SwiperSlide.html"></div>
+            <script>includeHTML();</script>
         </section>
-
+        <script src="../js/includeHTML.js"></script>
         <section class="promotion-about-web">
 
         </section>
