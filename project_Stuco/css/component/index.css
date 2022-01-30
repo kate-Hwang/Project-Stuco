@@ -14,7 +14,6 @@ body {
     width: 100%;
     margin: 0 auto;
     padding: 130px 0;
-    background-color: azure;
 }
 .main-display-inner{
     width: 1220px;
@@ -96,7 +95,9 @@ body {
 }
 /*-- Lottie-style --*/
 .moving-image{
-    
+    position: absolute;
+    top: calc(25vh - 150px);
+    left: calc(25vw - 150px);
 }
 
 /*------하단 footer-------*/
