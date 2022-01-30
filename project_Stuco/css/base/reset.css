@@ -20,7 +20,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-article, aside, details, figcaption, figure, 
+/* article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section { display: block; }
 body { line-height: 1; }
 ol, ul { list-style: none; }
@@ -29,4 +29,4 @@ blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
-}
+} */
