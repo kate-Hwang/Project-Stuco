@@ -1,35 +1,24 @@
 @charset "utf-8";
-
+* { margin: 0; padding: 0; }
 #wrap{ margin: 0; padding: 0;}
-
-/*----게시글----*/
-.contents{
-    display: flex;
-    border: 1px solid goldenrod;
-}
+.contents{ display: flex; border: 1px solid goldenrod; }
 .post-box{
     display: inline-block;
     width: 40vw;
+    height: 100vh;
     margin-left: 12px;
 }
-/*베스트글*/
+/*BestContents*/
 .best-notice{
     margin: 10px;
     max-width: 45vw;
-    height: 200px;
+    height: 20vh;
     background-color: skyblue;
 }
-/*--타임라인게시글--*/
-.notice{
-    max-width: 100vw;
-    height: 76vh;
-    float: left;
-}
-/*search*/
-.search{
-    max-width: 100vw;
-    margin: 5px;
-}
+/* Timeline Notice */
+.notice{ max-width: 100vw; height: 74vh;}
+/* Search */
+.search{ max-width: 100vw; margin: 5px; }
 .search input[type="text"]{
     width: 94%;
     border-radius: 2px;
@@ -39,7 +28,7 @@
     font-size: 15px;
     margin-left: 6px;
 }
-/*게시글-box*/
+/* Notice Box */
 .notice .time-line{
     max-height: 87%;
     padding: 5px;
@@ -48,10 +37,7 @@
     overflow: auto;
     border: 1px solid gray;
 }
-.line-notice{
-    max-height:100vh;
-    overflow: auto;
-}
+.line-notice{ max-height:100vh; }
 .notice .cbp-tmtime>li{
     height: 170px;
     margin-bottom: 10px;
@@ -62,22 +48,15 @@
 .notice .cbp-tmtime li .timeline-in>h2{ padding: 17px; }
 .notice .cbp-tmtime li .timeline-in>p{ padding: 5px 17px; }
 .cbp-time{ padding: 2px; }
-.cbp-tmtime{
-	padding: 5px;
-    list-style: none;
-}
-/*------------채팅창------------*/
-* {
-    margin: 0;
-    padding: 0;
-  }
+.cbp-tmtime{ padding: 5px; list-style: none; }
+/* chatting */
 .chat-background{
     width: 52%;
     display: flow-root;
     border-left: 1px solid darkgray;
 }
 .chat-list-wrap{
-    height: 76.5%;
+    height: 67vh;
     list-style: none;
     margin-left: 10px;
 }
@@ -94,14 +73,8 @@
     font-size: 15px;
 }
 .header>p:first-child{float: left;color: green;}
-.header>p:nth-child(2){
-    position: absolute;
-    left: 50px;
-}
-.header>p:nth-child(3){
-    position: absolute;
-    right: 67px;
-}
+.header>p:nth-child(2){ position: absolute; left: 50px; }
+.header>p:nth-child(3){ position: absolute; right: 67px; }
 .header>p:last-child{
     position: absolute;
     font-size: 14px;
@@ -141,33 +114,20 @@
     font-size: 11px;
     padding:13px 15px 5px 15px;
 }
-/*전송, 닉네임바꾸기 입력창*/
+/* sending text, change Nickname input*/
 .chat-input-txt{
     display: flex;
+    margin-left: 10px;
     border: 1.5px solid darkgray;
 }
-.btn-box{
-    height: 180px;
-}
-.btn-box button {
-    border-radius: 35px;
-    width:100%;
-}
-/*메세지 전송 버튼*/
-.btn-box p .change-nic{
-    top: 10px;
-    line-height: 5vh;
-}
+.btn-box{ height: 180px; }
+.btn-box button { border-radius: 35px; width:100%; }
+/*sending message button*/
+.btn-box p .change-nic{ top: 10px; line-height: 5vh; }
 .btn-box p{ width: 11vw; }
-.btn-box p .send-message{
-    bottom: 10px;
-    line-height: 9vh;
-}
+.btn-box p .send-message{ bottom: 10px; line-height: 9vh; }
 .btn-box button { padding:0px 15px; }
-.send-message{
-    padding: 36px 70px;
-    border-radius: 5px;
-}
+.send-message{ padding: 36px 70px; border-radius: 5px; }
 #send{
     resize: none;
     margin: 10px;
