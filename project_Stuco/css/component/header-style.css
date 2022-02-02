@@ -26,6 +26,6 @@ ul li{
     text-align: center;
     padding: 10px 0;
 }
-ul li a{ text-decoration: none; color: #000; font-weight: 500; font-size: 12px;}
+ul li a{ text-decoration: none; color: #000; letter-spacing: initial; font-weight: 500; font-size: 12px;}
 ul li:first-child{ letter-spacing: 7px; }
 ul li:nth-child(2) { letter-spacing: 2px; }
