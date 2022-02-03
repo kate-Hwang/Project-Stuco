@@ -55,7 +55,7 @@
 .cbp-tmtime{ padding: 5px; list-style: none; margin: 0; }
 /* chatting */
 .chat-background{
-    width: 52%;
+    width: 500px;/* width: 52%; */
     height: 97vh;
     display: flow-root;
     margin: 10px 20px;
@@ -131,11 +131,11 @@
     border: 1.5px solid darkgray;
 }
 .btn-box{ width: 19vh; margin: 0 10px; }
-.btn-box button { width:100%; border-radius: 5px;}
+.btn-box button { width:100%; border-radius: 5px; background-color: gold;}
 /*sending message button*/
 .btn-box p{margin: 5px}
-.btn-box p .change-nic{ padding: 10px 20px; letter-spacing: 1px; }
-.btn-box p .send-message{ padding: 50px 20px; }
+.btn-box p .change-nic{ padding: 10px 20px; letter-spacing: 1px; font-size: 12px;}
+.btn-box p .send-message{ padding: 44px 20px; font-size: 12px;}
 .btn-box button { padding:0px 15px; }
 .send-message{ padding: 36px 70px; }
 #send{
@@ -144,4 +144,5 @@
     width: 33vw;
     text-align: left;
     border: 1px solid darkgray;
+    font-size: 12px;
 }
