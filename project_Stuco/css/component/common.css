@@ -50,7 +50,7 @@
 .notice .cbp-tmtime li .timeline-in>h2{ padding: 17px; }
 .notice .cbp-tmtime li .timeline-in>p{ padding: 5px 17px; }
 .cbp-time{ padding: 2px; }
-.cbp-tmtime{ padding: 5px; list-style: none; }
+.cbp-tmtime{ padding: 5px; list-style: none; margin: 0; }
 /* chatting */
 .chat-background{
     width: 52%;
@@ -68,6 +68,7 @@
 .chat-list-wrap .header{
     position: relative;
     padding: 20px 15px;
+    margin-right: 7px;
     color: black;
     text-align: center;
     border-bottom: 1px solid #464646
@@ -97,7 +98,7 @@
     width: 20px;
     height: 20px;
     border-radius: 34px;
-    padding: 10px;
+    padding: 7px;
     border: 1px solid gray;
 }
 .chat-list ul li .random-name{
@@ -113,7 +114,7 @@
     border-radius: 5px;
     margin-left: 35px;
     font-size: 9px;
-    background-color: skyblue;
+    background-color: #dce4f0;
 }
 .chat-content p{
     font-size: 11px;
@@ -126,7 +127,7 @@
     margin-left: 10px;
     border: 1.5px solid darkgray;
 }
-.btn-box{ width: 14vh; margin: 0 10px; }
+.btn-box{ width: 19vh; margin: 0 10px; }
 .btn-box button { width:100%; border-radius: 5px;}
 /*sending message button*/
 .btn-box p{margin: 5px}
