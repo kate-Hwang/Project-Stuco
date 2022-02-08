@@ -63,7 +63,7 @@
     background-color: #f8f9fa;
 }
 .chat-list-wrap{
-    min-height: 74%;
+    height: 94%;
     list-style: none;
     margin-left: 10px;
 }
@@ -128,21 +128,34 @@
     margin-top: -13px;
     margin-left: 10px;
     margin-right: 10px;
-    border: 1.5px solid darkgray;
 }
-.btn-box{ width: 19vh; margin: 0 10px; }
-.btn-box button { width:100%; border-radius: 5px; background-color: gold;}
+.btn-box{ display: contents; }
 /*sending message button*/
-.btn-box p{margin: 5px}
-.btn-box p .change-nic{ padding: 10px 20px; letter-spacing: 1px; font-size: 12px;}
-.btn-box p .send-message{ padding: 44px 20px; font-size: 12px;}
-.btn-box button { padding:0px 15px; }
-.send-message{ padding: 36px 70px; }
-#send{
+.btn-box{ margin: 5px }
+.btn-box .change-nic{ 
+    width: 35px;
+    height: 35px;
+    padding: 2px;
+    margin: 5px 8px; 
+    letter-spacing: 1px; 
+    font-size: 17px; 
+    border-radius: 18px;
+    border: 1px solid skyblue;
+    background: skyblue;
+}
+.btn-box button { padding:0px 15px; border-radius: 5px; border: none;}
+.send-message{ 
+    width: 35px;
+    height: 35px;
+    margin: 5px 3px;
+    background: url(/project_Stuco/img/main/send.svg)8px 4px no-repeat; }
+#chatSend{
     resize: none;
-    margin: 10px;
-    width: 33vw;
+    padding: 10px 10px;
     text-align: left;
-    border: 1px solid darkgray;
-    font-size: 12px;
+    font-size: 15px;
+}
+#chatSend::placeholder{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
