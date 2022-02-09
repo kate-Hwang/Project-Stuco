@@ -14,9 +14,9 @@ window.addEventListener('load', function(){
 
                 if(this.readyState == 4 && this.status == 200) {
                     el.outerHTML = this.responseText;
-                    // const swiper = new Swiper('.swiper',{
+                    const swiper = new Swiper('.swiper',{
 
-                    // })
+                    })
                 }
             };
             xhttp.open('GET', includePath, true);
